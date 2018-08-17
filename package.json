@@ -1,0 +1,29 @@
+{
+  "name": "mypersonalsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chakalaka11/chakalaka11.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chakalaka11/chakalaka11.github.io/issues"
+  },
+  "homepage": "https://github.com/Chakalaka11/chakalaka11.github.io#readme",
+  "dependencies": {
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.3.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
+    "webpack": "^4.16.5"
+  }
+}
