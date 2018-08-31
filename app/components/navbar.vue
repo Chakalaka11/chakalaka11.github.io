@@ -2,12 +2,14 @@
 <template>
     <div class="nav-container">
         <div>
-
+            <router-link to="/"></router-link>
+            <router-link to="/photo"></router-link>
+            <router-link to="/projects"></router-link>
         </div>
     </div>
 </template>
 <script>
-export default {
+export default Navbar = {
     name:"navbar",
     data: function(){
         return{
