@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const VueLoader = require('vue-loader');
 const webpack = require('webpack'); 
 
 var config = {
@@ -26,9 +28,14 @@ var config = {
             }
         ]
     },
+    optimization:{
+        minimizer:[
+            new UglifyJsPlugin({})
+        ]
+    },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({ template: './index.html' })
+        new HtmlWebpackPlugin({ template: './index.html' }),
+        new VueLoader.VueLoaderPlugin()
     ]
 };
 
